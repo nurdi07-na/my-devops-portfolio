@@ -103,24 +103,24 @@ h2::before {
 }
 
 .avatar-placeholder {
-    width: 100% !important;
-    height: 300px !important;
-    background: #f0f0f0 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    overflow: hidden !important;
-    /* Ішкі бос орынды көбейтеміз */
-    padding: 30px !important; 
-    box-sizing: border-box !important;
+    width: 100%;
+    height: 300px;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    /* Мына жерге padding қостық, сурет шетінен алшақтайды */
+    padding: 15px; 
+    box-sizing: border-box; /* Padding еніне әсер етпеуі үшін */
 }
 
 .avatar-img {
-    /* 'contain' суреттің өлшемін рамкаға сыйдырады */
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: contain !important; 
-    display: block !important;
+    /* 'cover' орнына 'contain' қолданамыз, сонда сурет толық сыяды */
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    display: block;
 }
 .timeline-item {
     border-left: 2px dashed var(--blue);
