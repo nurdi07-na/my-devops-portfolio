@@ -1,9 +1,10 @@
+/* Жалпы баптаулар */
 :root {
-    --bg-main: #e8eaf6; 
-    --pink: #ff69b4;    
-    --yellow: #f4df4e; 
-    --blue: #6c5ce7;    
-    --cyan: #00cec9;    
+    --bg-main: #e8eaf6; /* Фон түсі */
+    --pink: #ff69b4;    /* Қызғылт */
+    --yellow: #f4df4e;  /* Сары */
+    --blue: #6c5ce7;    /* Күлгін/Көк */
+    --cyan: #00cec9;    /* Көгілдір */
     --text-color: #57606f;
 }
 
@@ -16,6 +17,7 @@ body {
     justify-content: center;
 }
 
+/* Негізгі парақ (қағаз эффектісі) */
 .container {
     width: 850px;
     background: #ffffff;
@@ -25,7 +27,7 @@ body {
     border-radius: 4px;
 }
 
-
+/* Сәндік лента (tape) */
 .tape {
     position: absolute;
     top: 25px;
@@ -37,7 +39,7 @@ body {
     box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
 }
 
-
+/* HELLO блогы */
 .header-box {
     background: var(--pink);
     display: inline-block;
@@ -55,7 +57,7 @@ body {
     letter-spacing: 4px;
 }
 
-
+/* Бағандарды бөлу */
 .content {
     display: flex;
     gap: 50px;
@@ -64,7 +66,7 @@ body {
 .left-col { flex: 1; }
 .right-col { flex: 1.3; }
 
-
+/* Бөлім тақырыптары */
 h2 {
     font-size: 22px;
     margin-bottom: 15px;
@@ -83,7 +85,7 @@ h2::before {
 .blue-title { color: var(--blue); }
 .cyan-title { color: var(--blue); }
 
-
+/* About Me сары блогы */
 .about-box {
     background: var(--yellow);
     padding: 20px;
@@ -95,7 +97,7 @@ h2::before {
     box-shadow: 4px 4px 0px rgba(0,0,0,0.05);
 }
 
-
+/* Сол жақтағы қолжазба мәтін */
 .handwritten-info {
     font-family: 'Gaegu', cursive;
     color: var(--pink);
@@ -104,7 +106,7 @@ h2::before {
     margin-bottom: 20px;
 }
 
-
+/* Аватар/Сурет орны */
 .avatar-container {
     background: white;
     padding: 10px;
@@ -118,13 +120,13 @@ h2::before {
 .avatar-placeholder {
     width: 100%;
     height: 300px;
-    background: #f0f0f0; 
+    background: #f0f0f0; /* Сурет жоқ кездегі фон */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
+/* Тәжірибе (Experience) сызығы */
 .timeline-item {
     border-left: 2px dashed var(--blue);
     padding-left: 20px;
@@ -145,7 +147,7 @@ h2::before {
 
 .year { font-weight: 600; color: var(--blue); }
 
-
+/* Жұлдызша мен жүрекше */
 .star {
     position: absolute;
     top: 60px;
@@ -164,7 +166,9 @@ h2::before {
     opacity: 0.6;
 }
 
-
+/* Тізімдер */
+ul { padding: 0; list-style: none; }
+li, p { color: var(--text-color); font-size: 16px; margin-bottom: 10px; }
 ul { padding: 0; list-style: none; }
 li, p { color: var(--text-color); font-size: 16px; margin-bottom: 10px; }
 }
