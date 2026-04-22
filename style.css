@@ -117,22 +117,13 @@ h2::before {
     width: 250px;
 }
 
-/* Тек суреттің өзіне арналған жаңа стильдер */
-.avatar-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Суретті созбай, ортасынан әдемі қиып көрсетеді */
-    display: block;
-}
-
 .avatar-placeholder {
     width: 100%;
     height: 300px;
-    background: #f0f0f0;
+    background: #f0f0f0; /* Сурет жоқ кездегі фон */
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Сурет шеңберден/блоктан шығып кетпеуі үшін */
 }
 
 /* Тәжірибе (Experience) сызығы */
