@@ -121,6 +121,24 @@ h2::before {
     align-items: center;
     justify-content: center;
 }
+/* Аватар суретінің стилі */
+.avatar-img {
+    width: 100%;       /* Контейнердің бүкіл енін алады */
+    height: 100%;      /* Контейнердің бүкіл биіктігін алады */
+    object-fit: cover; /* Суретті созбай, пропорциясын сақтап қияды */
+    display: block;    /* Артық бос орындарды алып тастайды */
+}
+
+/* Ескі CSS-тегі avatar-placeholder бөлігін былай өзгерткен жөн */
+.avatar-placeholder {
+    width: 100%;
+    height: 300px;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Сурет шетінен шығып кетсе, қиып тастайды */
+}
 
 .timeline-item {
     border-left: 2px dashed var(--blue);
