@@ -107,8 +107,9 @@ h2::before {
 .avatar-img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Суретті созбай, ортасынан әдемі қиып көрсетеді */
-    display: block;
+    /* 'cover' орнына 'contain' қойып көріңіз, егер сурет толық көрінуі керек болса */
+    object-fit: contain; 
+    background-color: #f9f9f9; /* Бос қалған жерлердің түсі */
 }
 
 .avatar-placeholder {
