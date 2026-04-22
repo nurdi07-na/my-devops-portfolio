@@ -108,7 +108,7 @@ h2::before {
     background: #f0f0f0 !important;
     display: flex !important;
     align-items: center !important;
-    justify-content: center !important;
+   
     overflow: hidden !important;
     /* Ішкі бос орынды көбейтеміз */
     padding: 30px !important; 
