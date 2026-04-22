@@ -103,15 +103,6 @@ h2::before {
 }
 
 
-/* Тек суреттің өзіне арналған жаңа стильдер */
-.avatar-img {
-    width: 100%;
-    height: 100%;
-    /* 'cover' орнына 'contain' қойып көріңіз, егер сурет толық көрінуі керек болса */
-    object-fit: contain; 
-    background-color: #f9f9f9; /* Бос қалған жерлердің түсі */
-}
-
 .avatar-placeholder {
     width: 100%;
     height: 300px;
@@ -119,9 +110,19 @@ h2::before {
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Сурет шеңберден/блоктан шығып кетпеуі үшін */
+    overflow: hidden;
+    /* Мына жерге padding қостық, сурет шетінен алшақтайды */
+    padding: 15px; 
+    box-sizing: border-box; /* Padding еніне әсер етпеуі үшін */
 }
 
+.avatar-img {
+    /* 'cover' орнына 'contain' қолданамыз, сонда сурет толық сыяды */
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    display: block;
+}
 .timeline-item {
     border-left: 2px dashed var(--blue);
     padding-left: 20px;
