@@ -1,0 +1,99 @@
+/* Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Body */
+body {
+	font-family: 'Inter', 'Segoe UI', sans-serif;
+	background: #0f172a;
+	color: #e2e8f0;
+}
+
+/* Container (ЕН МАҢЫЗДЫ) */
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 40px 20px;
+}
+
+/* Header */
+.header {
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.header h1 {
+	font-size: 2.5rem;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.header p {
+	color: #94a3b8;
+	font-size: 1.1rem;
+}
+
+/* Sections */
+.section {
+	margin-bottom: 50px;
+}
+
+.section h2 {
+	font-size: 1.5rem;
+	margin-bottom: 15px;
+	color: #38bdf8;
+}
+
+/* Bio */
+.bio p {
+	max-width: 600px;
+	margin: 0 auto;
+	color: #cbd5f5;
+}
+
+/* Skills Grid */
+.cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+/* Card */
+.card {
+	background: #1e293b;
+	padding: 25px;
+	border-radius: 12px;
+	text-align: center;
+	font-weight: 500;
+	transition: all 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	background: #38bdf8;
+	color: #0f172a;
+}
+
+/* Footer */
+.footer {
+	text-align: center;
+	margin-top: 40px;
+	padding-top: 20px;
+	border-top: 1px solid #1e293b;
+	color: #94a3b8;
+	font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.cards {
+		grid-template-columns: 1fr;
+	}
+
+	.header h1 {
+		font-size: 2rem;
+	}
+}
