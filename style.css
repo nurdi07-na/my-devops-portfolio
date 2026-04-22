@@ -160,12 +160,22 @@ h2::before {
     color: var(--pink);
     opacity: 0.6;
 }
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.content {
+    flex: 1; 
+}
+
 .footer {
-    background-color: #f8f9fa; 
+    background-color: #f8f9fa;
     padding: 20px;
     text-align: center;
     width: 100%;
-
+    margin-top: auto; 
+}
 ul { padding: 0; list-style: none; }
 li, p { color: var(--text-color); font-size: 16px; margin-bottom: 10px; }
 ul { padding: 0; list-style: none; }
